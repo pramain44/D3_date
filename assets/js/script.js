@@ -40,8 +40,14 @@ document.querySelector('h1').innerText += 'La saison 27 a commencé depuis '+ di
 document.querySelector('h2').innerText += 'Ou '+diffHours+' Heures';
 
 // fonction pour calculer H/J au clic bouton
-
-let botter = document.querySelector('button')
-botter.addEventListener(click, ()=>{
-
+let botter = document.querySelector('button');
+let info = document.querySelector('input');
+var hoursPerDay = (info.value)/diffDays;
+info.addEventListener('onkeyup', ()=>{
+    let info = document.querySelector('input').value;
+})
+botter.addEventListener('click', ()=>{
+    document.querySelector('.hoursPerDay').innerHTML += Math.round(hoursPerDay)+' H/J'
 } )
+
+console.log(info.value);

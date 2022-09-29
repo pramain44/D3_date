@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'diabloregular';
+    src: url('assets/font/webfontkit-20220919-084431/diablo_heavy-webfont.woff2') format('woff2'),
+         url('assets/font/webfontkit-20220919-084431/diablo_heavy-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 h1{
     text-align: center;
     margin-bottom: 2rem;
