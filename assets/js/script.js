@@ -26,7 +26,7 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 today = mm + ' ' + dd + ',' + yyyy +','+ hh +':'+ min +':'+ sec;
 
-const seasonDate = new Date('August 26, 2022, 17:00:00');
+const seasonDate = new Date('February 24, 2023, 17:00:00');
 let actualDate = new Date(today);
 const diffTime = Math.abs(actualDate - seasonDate);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
@@ -51,3 +51,25 @@ botter.addEventListener('click', ()=>{
 } )
 
 console.log(info.value);
+
+const btnToggle = document.querySelector('.btn-toggle');
+
+btnToggle.addEventListener('click', () => {
+
+    const body = document.body;
+
+    if(body.classList.contains('dark')){
+
+        body.classList.add('light')
+        body.classList.remove('dark')
+        btnToggle.innerHTML = "Go Dark"
+
+    } else if(body.classList.contains('light')){
+
+        body.classList.add('dark')
+        body.classList.remove('light')
+        btnToggle.innerHTML = "Go Light"
+
+    }
+
+})
