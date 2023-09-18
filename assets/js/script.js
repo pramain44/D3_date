@@ -26,7 +26,7 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 today = mm + ' ' + dd + ',' + yyyy +','+ hh +':'+ min +':'+ sec;
 
-const seasonDate = new Date('February 24, 2023, 17:00:00');
+const seasonDate = new Date('September 18, 2023, 17:00:00');
 let actualDate = new Date(today);
 const diffTime = Math.abs(actualDate - seasonDate);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
@@ -36,7 +36,7 @@ console.log(diffTime);
 console.log(diffDays + " days");
 console.log(diffHours +"heures");
 
-document.querySelector('h1').innerText += 'La saison 27 a commencé depuis '+ diffDays + '  jours';
+document.querySelector('h1').innerText += 'La saison 28 a commencé depuis '+ diffDays + '  jours';
 document.querySelector('h2').innerText += 'Ou '+diffHours+' Heures';
 
 // fonction pour calculer H/J au clic bouton
