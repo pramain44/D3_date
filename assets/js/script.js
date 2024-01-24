@@ -26,7 +26,7 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 today = mm + ' ' + dd + ',' + yyyy +','+ hh +':'+ min +':'+ sec;
 
-const seasonDate = new Date('January 12, 2023, 17:00:00');
+const seasonDate = new Date('January 12, 2024, 17:00:00');
 let actualDate = new Date(today);
 const diffTime = Math.abs(actualDate - seasonDate);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
