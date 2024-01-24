@@ -27,6 +27,7 @@ h2{
 
 button{
     border-color:aliceblue;
+    cursor: pointer;
 }
 
 .hoursPerDay{
